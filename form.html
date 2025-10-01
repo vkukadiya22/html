@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get" action="abc" align="left">
+        <fieldset>
+            <legend align="left">Sign-up</legend>
+            <label>
+                User Name: 
+                <input type="text" placeholder="Username" name="Uname" autofocus autocomplete="on"/>
+            </label>
+
+            <br><br>
+            <input type="image" src="c:\Users\LJENG\Downloads\itachi.png" alt="Itachi Uchiha" height="100">
+
+            <br><br>
+            <label>
+                Password : 
+                <input type="password" placeholder="Password" maxlength="5"/>
+            </label>
+
+            <br><br>
+            <label>
+                Mobile Number : 
+                <input type="tel" placeholder="Number" name="tel" />
+            </label>
+
+            <br><br>
+            <label>
+                Email : 
+                <input type="email" value="email" placeholder="this is readonly field"/>
+            </label>
+
+            <br><br>
+            <label>
+                Gender : 
+                <input type="radio" checked name="gender" value="male"/>Male
+                <input type="radio" name="gender" value="female"/>Female
+            </label>
+
+            <br><br>
+            <label>
+                Area Of Interest : 
+                <input type="checkbox" name="DS"/>DS
+                <input type="checkbox" name="FSD"/>FSD
+                <input type="checkbox" name="PS"/>PS
+                <input type="checkbox" name="FCSP"/>FCSP
+            </label>
+
+            <br><br>
+            <label>
+                Age : 
+                <input type="range" id="Age" name="age" min="18" max="70" 
+                step="2" value=""oninput="num.value=this.value"/>
+            </label>
+
+            <br><br>
+            <label>
+                Your Age : 
+                <input type="text" id="num" disabled/>
+            </label>
+            
+            <br><br>
+            <label>
+                DOB : 
+                <input type="date" name="dob" min="2023-10-01"/>
+            </label>
+
+            <br><br>
+            <label>
+                Department : 
+                <select name="department"/>
+                    <option value="" selected disabled hidden>select Depart.</option>
+                    <optgroup label="CE">
+                        <option>AIDS</option>
+                        <option>CSE</option>
+                        <option>CST</option>
+                    </optgroup>
+
+                    <optgroup label="MECH">
+                        <option>CAD</option>
+                        <option>CAM</option>
+                    </optgroup>
+            </label>
+
+            <br><br>
+            <label>Address :</label>
+            <textarea name="add" rows="6" cols="20">Enter Your Address :</textarea>
+
+            <br><br>
+            <label>
+                Upload File : 
+                <input type="file" name="f1" accept=".pdf,.doc" multiple/>
+            </label>
+
+            <br><br>
+            <input type="color" name="fav" id="favcolor" value="black"/>
+            <input type="hidden" name="id" value="1234"/>
+
+            <br><br>
+            <input type="submit" value="Check Me"/>
+
+            <br><br>
+            <input type="reset" value="Reset"/>
+
+
+        </fieldset>
+    </form>
+</body>
+</html>
